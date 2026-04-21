@@ -1,0 +1,141 @@
+1.
+Question 1
+You are a marketing analyst for a retail company. Your team is discussing ways to improve market research efforts. A colleague mentions web scraping as a potential solution. Which of the following are examples of how businesses might use web scraping for market research and analysis? Select all that apply.
+
+
+
+Conducting surveys and collecting customer feedback through online forms
+
+Extracting pricing data from various e-commerce websites to analyze market trends
+
+Identifying emerging trends and popular products by analyzing social media discussions
+
+Monitoring customer reviews and feedback on competitor products
+
+1 point
+2.
+Question 2
+Imagine you're building a website for your new online bookstore. You want to make sure your website is easy for web scrapers to navigate and extract information like book titles, author names, and prices. Which of the following HTML tags would be most important for a web scraper to identify and extract the title of a book from your website? Select the best answer.
+
+
+
+<html>
+
+<span>
+
+<h1>
+
+<div>
+
+1 point
+3.
+Question 3
+You're working as a data analyst for a company that wants to monitor online reviews of their products across different e-commerce platforms. You decide to use BeautifulSoup to scrape customer reviews from these websites. After parsing the HTML of a product page using BeautifulSoup, which function would you use to extract all the customer review text from the page? Select the best answer.
+
+
+
+find('p')
+
+select_one('.review-text')
+
+find_all('div', class_='review')
+
+get_text()
+
+1 point
+4.
+Question 4
+You're working as a freelance web scraper, and a client has asked you to extract product information from an e-commerce website. The client wants the product name, price, and customer rating for each item. After inspecting the website's HTML, you discover the following structure:
+
+The product name is stored in an <h2> tag with the class "product-title".
+
+The price is stored in a <span> tag with the class "price".
+
+The customer rating is stored in a <div> tag with the class "rating".
+
+Which code snippet would you use to extract the price of a product, given that you already have the soup object representing the parsed HTML of the product page? Select the best answer.
+
+
+
+soup.find('div', class_='price').get_text()
+
+soup.find('span', class_='price').get_text()
+
+soup.select_one('.price')
+
+soup.find_all('span', class_='price')
+
+1 point
+5.
+Question 5
+You're a data scientist working for a social media analytics company. You need to collect data from various social media platforms to analyze trends and user sentiment. You've decided to use Scrapy to handle this large-scale data extraction. Which of the following are core components of the Scrapy framework that work together to extract and process data? Select all that apply.
+
+
+
+Items
+
+Requests
+
+Spiders
+
+Pipelines
+
+1 point
+6.
+Question 6
+You're tasked with building a Scrapy spider to extract data from a website with multiple pages of content. You need to ensure your spider can efficiently navigate through these pages and collect data from each one. Which of the following techniques is crucial for handling pagination when building a Scrapy spider to scrape data from multiple pages? Select the best answer.
+
+
+
+Using the getall() method to extract all the links from a page and follow them
+
+Defining a start_urls list with all the URLs of the pages you want to scrape
+
+Using the response.css() method to extract all the text content from each page
+
+Identifying patterns in the URLs of paginated pages and generating requests for each page
+
+1 point
+7.
+Question 7
+You're scraping a website to collect data on historical weather patterns. Your Scrapy spider is running, but you start to encounter numerous "404 Not Found" errors. What is the most likely cause of these "404 Not Found" errors in this scenario? Select the best answer.
+
+
+
+Your spider is trying to access pages that no longer exist or have been moved.
+
+The website is using CAPTCHA challenges to prevent automated access.
+
+The website is using rate limiting to block your spider.
+
+Your internet connection is unstable, preventing your spider from accessing the website.
+
+1 point
+8.
+Question 8
+You are building a web scraping tool to gather data for your startup. You want to ensure you are collecting data ethically and responsibly. Which of the following actions are important for ethical web scraping? Select all that apply.
+
+
+
+Scraping data as quickly as possible to minimize the load on the website's servers
+
+Reviewing the website's terms of service to understand their policies on data collection
+
+Collecting user data, such as email addresses and passwords, to provide personalized services
+
+Respecting the website's robots.txt file, which specifies which parts of the site should not be scraped
+
+1 point
+9.
+Question 9
+You are a data analyst working for a market research firm. You've been tasked with collecting data on customer reviews for a new product launched by a competitor. You decide to use web scraping to gather this data from various e-commerce websites. After you've successfully scraped the raw data, what is the next crucial step in preparing this data for analysis and visualization? Select the best answer.
+
+
+
+Cleaning, transforming, and organizing the data into a usable format
+
+Immediately building visualizations to present the findings to your team
+
+Storing the raw data in a secure location for future reference
+
+Sharing the raw data with your colleagues to get their input and feedback
